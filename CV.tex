@@ -1,0 +1,153 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    urlcolor=blue          % color of external links
+}
+
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% CONTENT
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Jacek Rojek}}
+\end{center}
+\begin{center}
++ 44 749 574 4394 (UK)\ \ \textbullet
+\ \ \href{mailto:j.rojek19@gmail.com}{J.Rojek19@gmail.com}
+\\
+\href{https://github.com/JacekRojek}{Github} \ \ \textbullet
+\ \ \href{https://www.linkedin.com/in/jacek-rojek-b7a396105/}{LinkedIn} \ \ \textbullet
+\ \ \href{https://stackoverflow.com/users/4375103/jacek-rojek}{StackOverflow}\ \ \textbullet
+\ \ \href{https://indiedevart.wordpress.com/}{Blog} \ \ \textbullet
+\ \ \href{https://jacekrojek.github.io/JacekRojek-Portfolio/}{Portfolio} \ \ \textbullet
+\ \ \href{https://www.kaggle.com/jacek123}{Kaggle} \ \ \textbullet
+\ \ \href{https://www.codewars.com/users/JacekRojek}{CodeWars}
+
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+  \item
+	\headerrow
+		{\textbf{Self Employed}}
+		{\textbf{UK}}
+	\\
+	\headerrow
+		{\emph{Software Developer}}
+		{\emph{2019 -- Present}}
+	\begin{itemize*}
+		\item Web development - JAM stack
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Dubit LTD}}
+		{\textbf{Leeds, UK}}
+	\\
+	\headerrow
+		{\emph{JS Developer}}
+		{\emph{2016 -- 2019}}
+	\begin{itemize*}
+		\item ReactNative, Objective-C, Java - mobile development
+		\item React, JS, HTML, CSS, jQuery - web development
+		\item NodeJS, Google Cloud, AWS - backend
+		\item Docker, TeamCity - devOps
+		\item Unity - games development
+		\item Agile Development, JIRA
+  \end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Leeds Cit College}}
+		{\textbf{Leeds, UK}}
+	\\
+	\headerrow
+		{\emph{BTEC Level3 Extended Diploma in IT}}
+		{\emph{2015 -- 2016}}
+  	\begin{itemize*}
+      \item Graduated with D*D*D* 
+    \end{itemize*}
+  \item 
+	\headerrow
+		{\textbf{Warsaw University of Technology}}
+		{\textbf{Warsaw, Poland}}
+	\\
+	\headerrow
+		{\emph{Undergraduate - Automation and Robotics}}
+		{\emph{2012 -- 2014}}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	JavaScript(React, ReactNative, RxJS, NodeJS, Redux), \LaTeX, Python(pandas, numpy, scikit-learn, SciPy, matplotlib), SQL(PostgreSQL),
+  \item[Other:] Linux(btw I use Arch), NoSQL(MongoDB), Docker, Mathematics, Statistics
+  % TODO: \item[Open Source Contributions:]
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Other}
+\begin{indentsection}{\parindent}
+  \hyphenpenalty=1000
+  \begin{description*}
+    \item Driving license B category 
+  \end{description*}
+  \end{indentsection}
+
+\end{document}
